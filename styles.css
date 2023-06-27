@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+:root{
+    --b-color: #000;
+    --w-color: #fff;
+    --shadow:  #00000041;
+    --goo-blu: #4285f4;
+}
+.navbar{
+    background: var(--w-color);
+    box-shadow: 0px 4px 6px var(--shadow) ;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+.navbar ul li{
+    display: inline-flex;
+    padding:  10px;
+    list-style: none;
+}
+.navbar .logo{
+    padding: 10px 0;
+   }
+.navbar a{
+    text-decoration: none;
+    color: var(--b-color);
+    font-size: 20px;
+    font-weight: 700;
+    
+}
+.navbar .action-button .btn {
+    height: 40px;
+    width: 120px;
+    border: none;
+    outline: none;
+    background: var(--b-color);
+    color: var(--w-color);
+    border-radius: 50px;
+    position:sticky;
+    top: 0;
+}
+.navbar .action-button .btn:hover{
+background: transparent;
+color: var(--b-color);
+border: 2px dashed var(--b-color);
+cursor: pointer;
+transform: translateY(-3px);
+
+}
+#home {
+    background: url('./assets/images/food_1.jpg') no-repeat  center/cover;
+    height: 100vh;
+
+}
+.container {
+    max-width: 400px;
+    margin: 80px auto;
+    box-shadow: 0px 5px 7px var(--shadow);
+    padding: 30px;
+    border-radius: 7px;
+}
+.container form input{
+    width: 100%;
+    height: 45px;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+.container form a, .container form p{
+   font-size: 13px;
+   text-decoration: none;
+   font-weight:600 ;
+   color: var(--goo-blu);
+}
+.container form button{
+    height: 45px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: var(--goo-blu);
+    color: var(--w-color);
+    font-size:14px ;
+    font-weight: 600;
+    border-radius: 2px;
+}
+.container form button:hover{
+    background: transparent;
+    border: 2px solid var(--goo-blu);
+    color: var(--goo-blu);
+}
